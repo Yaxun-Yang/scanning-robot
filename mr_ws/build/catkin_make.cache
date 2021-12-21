@@ -1,0 +1,2 @@
+mapping_robot
+-DCATKIN_DEVEL_PREFIX=/home/stereye/mr_ws/devel -DCMAKE_INSTALL_PREFIX=/home/stereye/mr_ws/install -G Unix Makefiles

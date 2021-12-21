@@ -1,0 +1,30 @@
+open vnc:
+/usr/lib/vino/vino-server &
+remmina-> input ip
+
+start laser:
+cd pavo_ws/
+source devel/setup.bash
+roslaunch pavo_ros pavo_scan.launch
+
+
+start cartographer:
+cd mr_ws/
+source devel/setup.bash
+roslaunch mapping_robot demo_ui.launch
+
+save map:
+rosservice call /finish_trajectory 0
+rosservice call /write_state '{filename: "/home/stereye/test.pbstream"}'
+.pbstream to yaml?
+
+amcl...
+
+
+
+
+
+robot control(wasd):
+cd move_ws/
+source devel/setup.bash
+rosrun move move_node

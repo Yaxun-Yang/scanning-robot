@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "thread": "cpp",
+        "*.tcc": "cpp",
+        "__bit_reference": "cpp",
+        "__string": "cpp",
+        "algorithm": "cpp",
+        "deque": "cpp",
+        "future": "cpp",
+        "ios": "cpp",
+        "memory": "cpp",
+        "type_traits": "cpp"
+    }
+}
