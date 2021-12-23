@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="jpegdecoder" type="jpegdecoder" name="jpegdecoder" output="screen" respawn="false" launch-prefix="">
+    <param name="jpg_topic" value="/rgb/image_raw/compressed" />
+    <param name="bgr_topic" value="/rgb/image_view" />
+  </node>
+</launch>
