@@ -1,8 +1,0 @@
-prefix=/home/stereye/azure_ws/install
-
-Name: azure_kinect_ros_driver
-Description: Description of azure_kinect_ros_driver
-Version: 0.9.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: 

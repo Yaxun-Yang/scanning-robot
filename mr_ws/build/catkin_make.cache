@@ -1,2 +1,0 @@
-mapping_robot
--DCATKIN_DEVEL_PREFIX=/home/yyxunn/scanning-robot/mr_ws/devel -DCMAKE_INSTALL_PREFIX=/home/yyxunn/scanning-robot/mr_ws/install -G Unix Makefiles
