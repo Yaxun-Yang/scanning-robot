@@ -1,4 +1,4 @@
-prefix=/home/stereye/move_ws/install
+prefix=/home/yyxunn/scanning-robot/move_ws/install
 
 Name: move
 Description: Description of move

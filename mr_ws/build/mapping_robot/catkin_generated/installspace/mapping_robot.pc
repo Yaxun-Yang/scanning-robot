@@ -1,8 +1,0 @@
-prefix=/home/stereye/mr_ws/install
-
-Name: mapping_robot
-Description: Description of mapping_robot
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

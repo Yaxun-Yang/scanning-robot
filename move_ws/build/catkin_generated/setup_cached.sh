@@ -7,4 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/stereye/move_ws/build'
+export CMAKE_PREFIX_PATH="/home/yyxunn/scanning-robot/move_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/yyxunn/scanning-robot/move_ws/devel/lib:$LD_LIBRARY_PATH"
+export PWD='/home/yyxunn/scanning-robot/move_ws/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/yyxunn/scanning-robot/move_ws/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/yyxunn/scanning-robot/move_ws/src:$ROS_PACKAGE_PATH"

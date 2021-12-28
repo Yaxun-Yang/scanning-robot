@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/move_node.dir/src/move_node.cpp.o"
+  "/home/yyxunn/scanning-robot/move_ws/devel/lib/move/move_node"
+  "/home/yyxunn/scanning-robot/move_ws/devel/lib/move/move_node.pdb"
   "CMakeFiles/move_node.dir/src/Motor.cpp.o"
-  "/home/stereye/move_ws/devel/lib/move/move_node.pdb"
-  "/home/stereye/move_ws/devel/lib/move/move_node"
+  "CMakeFiles/move_node.dir/src/move_node.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

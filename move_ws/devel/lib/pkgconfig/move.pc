@@ -1,4 +1,4 @@
-prefix=/home/stereye/move_ws/devel
+prefix=/home/yyxunn/scanning-robot/move_ws/devel
 
 Name: move
 Description: Description of move

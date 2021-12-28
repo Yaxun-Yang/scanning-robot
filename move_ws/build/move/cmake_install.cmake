@@ -1,8 +1,8 @@
-# Install script for directory: /home/stereye/move_ws/src/move
+# Install script for directory: /home/yyxunn/scanning-robot/move_ws/src/move
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/stereye/move_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yyxunn/scanning-robot/move_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/stereye/move_ws/build/move/catkin_generated/installspace/move.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yyxunn/scanning-robot/move_ws/build/move/catkin_generated/installspace/move.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/move/cmake" TYPE FILE FILES
-    "/home/stereye/move_ws/build/move/catkin_generated/installspace/moveConfig.cmake"
-    "/home/stereye/move_ws/build/move/catkin_generated/installspace/moveConfig-version.cmake"
+    "/home/yyxunn/scanning-robot/move_ws/build/move/catkin_generated/installspace/moveConfig.cmake"
+    "/home/yyxunn/scanning-robot/move_ws/build/move/catkin_generated/installspace/moveConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/move" TYPE FILE FILES "/home/stereye/move_ws/src/move/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/move" TYPE FILE FILES "/home/yyxunn/scanning-robot/move_ws/src/move/package.xml")
 endif()
 

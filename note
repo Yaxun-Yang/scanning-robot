@@ -16,7 +16,11 @@ roslaunch mapping_robot demo_ui.launch
 save map:
 rosservice call /finish_trajectory 0
 rosservice call /write_state '{filename: "/home/stereye/test.pbstream"}'
-.pbstream to yaml?
+
+.pbstream to pgm&yaml
+ rosrun cartographer_ros cartographer_pbstream_to_ros_map -map_filestem=/home/yyxunn/test_map -pbstream_filename=/home/yyxunn/Downloads/b2-2016-04-05-14-44-52.bag.pbstream -resolution=0.05
+
+
 
 amcl...
 
