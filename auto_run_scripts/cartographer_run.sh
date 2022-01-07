@@ -19,7 +19,7 @@ fi
 
 if [[ "$CART_MODE" = "OFFLINE" && "$CART_UI" = "ON" ]]; then
     echo "Running offline mode with rviz"
-    #roslaunch mapping_robot offline_ui.launch bag_filenames:=$BAG_FILE_DIR/$BAG_FILE_NAME
+    roslaunch mapping_robot offline_ui.launch bag_filenames:=$BAG_FILE_DIR/$BAG_FILE_NAME
 fi
 
 if [[ "$CART_MODE" = "ONLINE" && "$CART_UI" = "OFF" ]]; then
