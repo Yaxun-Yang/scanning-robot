@@ -1,8 +1,8 @@
-obstacle_range: 2.5
-raytrace_range: 3.0
+obstacle_range: 1 # 1m内有阻塞物时更新地图
+raytrace_range: 3.0 #读取3m内的雷达信息
 footprint: [[x0, y0], [x1, y1], ... [xn, yn]]
 #robot_radius: ir_of_robot
-inflation_radius: 0.55
+inflation_radius: 0.3 
 
 observation_sources: laser_scan_sensor point_cloud_sensor
 

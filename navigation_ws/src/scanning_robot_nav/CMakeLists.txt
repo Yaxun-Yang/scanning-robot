@@ -9,6 +9,10 @@ project(scanning_robot_nav)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   movebase
+  roscpp
+  tf
+  nav_msgs
+  std_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -202,3 +206,12 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+add_executable(odometry_publisher
+src/fake_odom_publisher.cpp)
+
+target_link_libraries(
+    odometry_publisher
+    ${catkin_LIBRARIES}
+)
+
+
