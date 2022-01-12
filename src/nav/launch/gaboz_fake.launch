@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <param name="robot_description" command="cat '$(find two_wheels_description)/urdf/two_wheels.urdf'" />
+    
+    <arg name="x" default="-2"/>
+    <arg name="y" default="0"/>
+    <arg name="z" default="0.1"/>
+    
+    <node name="mybot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+          args="-urdf -param robot_description -model mybot -x $(arg x) -y $(arg y) -z $(arg z)" />
+          
+    <rosparam file="$(find nav)/param/my_diff_drive.yaml" command="load" />
+    
+    <node name="SARA_controller manager" pkg="controller_manager" type="spawner"
+          respawn="false" output="screen" args="mobile_base_controller" />
+          
+          
+</launch>

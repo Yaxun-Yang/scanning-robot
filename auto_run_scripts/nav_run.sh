@@ -5,5 +5,7 @@
 
 source $ROS_ROOT
 source $ROOT_DIR/devel/setup.bash
-roslaunch pavo_ros pavo_scan.launch
+
+roslaunch nav configuration.launch
+roslaunch nav move_base.launch
 

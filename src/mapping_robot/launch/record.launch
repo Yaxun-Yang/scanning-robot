@@ -1,0 +1,10 @@
+<launch>
+    <arg name="compression" default="0" />
+    <arg name="topics" default="['/rgb/image_raw/compressed', '/depth_to_rgb/image_raw', '/PavoScanNode/scan', '/mapping_robot/state']"/>
+    <arg name="bag_path" default="test.bag" />
+    <node pkg="mapping_robot" type="recorder_node" name="recorder_node" output="screen" required="true">
+        <param name="compression"     type="int"   value="$(arg compression)" />
+        <rosparam param="topics" subst_value="True">$(arg topics)</rosparam>
+        <param name="bag_path"     type="string"   value="$(arg bag_path)" />
+    </node>
+</launch>

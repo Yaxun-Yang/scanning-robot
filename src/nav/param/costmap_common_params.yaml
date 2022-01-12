@@ -1,0 +1,11 @@
+obstacle_range: 1 # 1m内有阻塞物时更新地图
+raytrace_range: 3.0 #读取3m内的雷达信息
+footprint: [[-0.3, -0.3], [-0.3, 0.3], [0.3, 0.3], [0.3, -0.3]]
+#robot_radius: ir_of_robot
+inflation_radius: 0.3 
+
+observation_sources: laser_scan_sensor point_cloud_sensor
+
+laser_scan_sensor: {sensor_frame: laser_frame, data_type: LaserScan, topic: /PavoScanNode/scan, marking: true, clearing: true}
+
+point_cloud_sensor: {sensor_frame: laser_frame, data_type: PointCloud2, topic: /scan_matched_points2, marking: true, clearing: true}
