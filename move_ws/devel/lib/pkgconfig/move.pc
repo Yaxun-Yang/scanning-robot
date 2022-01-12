@@ -1,8 +1,0 @@
-prefix=/home/yyxunn/scanning-robot/move_ws/devel
-
-Name: move
-Description: Description of move
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
