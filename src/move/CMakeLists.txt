@@ -12,6 +12,15 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   serial
+  control_msgs
+  control_toolbox
+  controller_manager
+  actionlib
+  cmake_modules
+  sensor_msgs
+  trajectory_msgs
+  transmission_interface
+  urdf
 )
 
 ## System dependencies are found with CMake's conventions
