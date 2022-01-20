@@ -1,9 +1,10 @@
 #! /bin/bash
-ROS_ROOT=/opt/ros/noetic/setup.bash
-#ROS_ROOT=/opt/ros/melodic/setup.bash
+#ROS_ROOT=/opt/ros/noetic/setup.bash
+ROS_ROOT=/opt/ros/melodic/setup.bash
 
-#ROOT_DIR=/home/stereye/scanning-robot
-ROOT_DIR=/home/yyxunn/scanning-robot
+ROOT_DIR=/home/stereye/scanning-robot
+
+#ROOT_DIR=/home/yyxunn/scanning-robot
 
 BAG_FILE_DIR=$ROOT_DIR/input
 BAG_FILE_NAME=test.bag
@@ -24,6 +25,6 @@ CART_UI=ON
 #CART_UI=OFF
 
 # whether run in neotic?
-NEOTIC=true
+#NEOTIC=true
 CART_ROOT=/home/yyxunn/cartographer_ws
-#NEOTIC=false
+NEOTIC=false

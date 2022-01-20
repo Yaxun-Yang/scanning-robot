@@ -59,6 +59,8 @@
   <build_depend>hardware_interface</build_depend>
   <build_depend>trajectory_msgs</build_depend>
   <build_depend>diff_drive_controller</build_depend>
+  <build_depend> transmission_interface</build_depend>
+  
 
   <exec_depend>controller_manager</exec_depend>
   <exec_depend>roscpp</exec_depend>
@@ -71,6 +73,7 @@
   <exec_depend>trajectory_msgs</exec_depend>
   <!-- Very important for this kind of robot!! -->
   <exec_depend>diff_drive_controller</exec_depend>
+   <exec_depend> transmission_interface</exec_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->
