@@ -69,7 +69,7 @@ public:
     double diff_speed_right = cmd[1];
     printf("cmd_0:%.2f; cmd_1:%.2f",cmd[0], cmd[1]);
     limitDifferentialSpeed(diff_speed_left, diff_speed_right);
-    double speed = std::max(std::abs(diff_speed_left), std::abs(diff_speed_right));
+    double speed = std::max(std::abs(diff_speed_left), std::abs(diff_speed_right))+5;
     pMotor->move(speed, 0, 0);
 	// // Publish results																																																									
 	// std_msgs::Float32 left_wheel_vel_msg;
@@ -189,7 +189,7 @@ MyRobotHWInterface::MyRobotHWInterface()
     sleep(2);
 
     private_nh.param<double>("wheel_diameter", _wheel_diameter, 0.2);
-    private_nh.param<double>("max_speed", _max_speed, 1.0);
+    private_nh.param<double>("max_speed", _max_speed, 10.0);
   
     // Intialize raw data
     std::fill_n(pos, NUM_JOINTS, 0.0);
